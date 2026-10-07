@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a0306" />
+  <title>Festive Lucky Spin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stars" id="stars" aria-hidden="true"></div>
+
+  <main class="app">
+    <header class="hero">
+      <p class="shop-name" id="shopName">MAA DURGA MOBILE HOUSE</p>
+      <h1>Festive <span>Lucky Spin</span></h1>
+      <p class="tagline">Spin the wheel &amp; win an assured gift! 🎁</p>
+    </header>
+
+    <section class="wheel-area">
+      <div class="wheel-wrap" id="wheelWrap">
+        <div class="glow" aria-hidden="true"></div>
+
+        <div class="pointer" id="pointer" aria-hidden="true">
+          <svg viewBox="0 0 60 80">
+            <defs>
+              <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#fff3b0" />
+                <stop offset=".45" stop-color="#ffc21a" />
+                <stop offset="1" stop-color="#d97a00" />
+              </linearGradient>
+            </defs>
+            <path d="M30 78 L6 28 A26 26 0 1 1 54 28 Z" fill="url(#pg)" stroke="#7a3b00" stroke-width="2.5" />
+            <circle cx="30" cy="26" r="9" fill="#e0123a" stroke="#7a0016" stroke-width="2" />
+            <circle cx="27" cy="23" r="3" fill="#ff8fa3" />
+          </svg>
+        </div>
+
+        <div class="rim">
+          <div class="bulbs" id="bulbs" aria-hidden="true"></div>
+          <canvas id="wheel" aria-label="Prize wheel" role="img"></canvas>
+        </div>
+
+        <button class="spin-btn" id="spinBtn" type="button" aria-label="Spin the wheel">
+          <span class="spin-text">SPIN</span>
+          <span class="spin-sub">NOW!</span>
+        </button>
+      </div>
+    </section>
+
+    <p class="hint" id="hint" aria-live="polite">Tap <b>SPIN NOW</b> to try your luck ✨</p>
+
+    <section class="prizes" aria-label="Prizes">
+      <h2>Prizes on the wheel</h2>
+      <ul class="chips" id="chips"></ul>
+    </section>
+
+    <footer class="tnc">
+      *One spin per customer. Gift to be claimed at the counter on the same day. Images for representation only.
+    </footer>
+  </main>
+
+  <!-- Result popup -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="rays" aria-hidden="true"></div>
+      <div class="prize-icon" id="prizeIcon">🎁</div>
+      <p class="congrats" id="modalTitle">Congratulations! 🎉</p>
+      <p class="you-won">You won</p>
+      <p class="prize-name" id="prizeName">Prize</p>
+      <p class="claim-note">Show this screen at the counter to collect your gift.</p>
+      <button class="modal-btn" type="button" data-close>Awesome! 🥳</button>
+    </div>
+  </div>
+
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>

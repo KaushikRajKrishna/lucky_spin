@@ -16,13 +16,19 @@ const CONFIG = {
   `label` is what's printed on the wheel ("\n" = line break).
 */
 const PRIZES = [
-  { name: "Smart Phone",    label: "Smart\nPhone",    icon: "📱", weight: 0,  color: "#7b1fa2" },
-  { name: "Tempered Glass", label: "Tempered\nGlass", icon: "🛡️", weight: 30, color: "#e0123a" },
-  { name: "Headphones",     label: "Headphones",      icon: "🎧", weight: 1,  color: "#1e88e5" },
-  { name: "Mobile Cover",   label: "Mobile\nCover",   icon: "📲", weight: 16, color: "#f57c00" },
-  { name: "OTG Adapter",    label: "OTG",             icon: "🔌", weight: 8,  color: "#2e9e3e" },
-  { name: "Earbuds",        label: "Earbuds",         icon: "🎵", weight: 20, color: "#e91e8c" },
-  { name: "Charger",        label: "Charger",         icon: "⚡", weight: 13, color: "#00a0a8" },
+  { name: "Washing Machine", label: "Washing\nMachine", icon: "🧺", weight: 0,  color: "#3949ab" },
+  { name: "Tempered Glass",  label: "Tempered\nGlass",  icon: "🛡️", weight: 30, color: "#e0123a" },
+  { name: "Cooler",          label: "Cooler",           icon: "🌬️", weight: 0,  color: "#00897b" },
+  { name: "Headphones",      label: "Headphones",       icon: "🎧", weight: 1,  color: "#1e88e5" },
+  { name: "Heater",          label: "Heater",           icon: "🔥", weight: 0,  color: "#d84315" },
+  { name: "Mobile Cover",    label: "Mobile\nCover",    icon: "📲", weight: 16, color: "#f57c00" },
+  { name: "AC",              label: "AC",               icon: "❄️", weight: 0,  color: "#0288d1" },
+  { name: "OTG Adapter",     label: "OTG",              icon: "🔌", weight: 8,  color: "#2e9e3e" },
+  { name: "Fridge",          label: "Fridge",           icon: "🧊", weight: 0,  color: "#5e35b1" },
+  { name: "Earbuds",         label: "Earbuds",          icon: "🎵", weight: 20, color: "#e91e8c" },
+  { name: "Data Cable",      label: "Data\nCable",      icon: "🔗", weight: 0,  color: "#6d4c41" },
+  { name: "Charger",         label: "Charger",          icon: "⚡", weight: 13, color: "#00a0a8" },
+  { name: "iPhone 17",       label: "iPhone\n17",       icon: "📱", weight: 0,  color: "#c62828" },
 ];
 
 /* =========================================================
